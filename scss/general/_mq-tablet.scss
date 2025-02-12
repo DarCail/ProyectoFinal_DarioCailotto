@@ -1,0 +1,23 @@
+//include de mixin de grid
+@import "../utilidades/mixin";
+
+
+
+
+
+
+/* estilos de tablet */
+
+@media screen and (min-width: 600px){
+    main{
+        gap: 2rem;
+        align-content: center;
+    }
+        .img-1{
+            justify-self: center;
+            align-self: center;
+            
+        }
+    }
+    
+

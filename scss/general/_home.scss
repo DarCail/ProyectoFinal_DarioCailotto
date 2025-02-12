@@ -1,0 +1,58 @@
+
+@import "../utilidades/mixin";
+
+/* estilos de main*/
+
+main{
+    @include grid (grid, 1fr, repeat(3, auto));
+    padding: 1.5rem;
+    h1{
+            text-align: center;
+            text-decoration-line: underline;
+            color: $color-secundario;
+        }
+        h2{
+            text-align: center;
+            
+            color: $color-secundario;
+            
+        
+        }
+        .img-z,.img-y{
+            display: none;
+        }
+        
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-style:solid;
+            border-color: $color-secundario;
+        }
+        
+        h3,h4,h5,h6{
+            color: $color-secundario;
+            text-align: justify;
+        }
+        
+        p{
+            text-align: justify;
+        }
+        .ph{
+            margin-bottom: 4vh;
+        }
+
+    }
+}
+
+/* estilos footer */
+
+footer{
+    background-color:#6c757d ;
+    margin-top: 2rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+

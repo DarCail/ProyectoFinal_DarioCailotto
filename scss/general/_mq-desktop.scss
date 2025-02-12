@@ -1,0 +1,80 @@
+//import de mixin grid
+@import "../utilidades/mixin";
+
+/* estilos desktop */
+
+@media screen and (min-width: 1024px){
+    main{
+        @include grid(grid, repeat(3, 1fr),repeat(4, auto));
+        .informacion{
+            grid-column: span 2;
+            margin-inline: 2rem;
+            align-content: center;
+            ul{
+                font-size: 1.6vw;
+            }
+        }
+        .seccion2, .seccion3{
+            grid-column: span 2;
+            border-bottom-style: solid  ;
+            margin-inline: 2rem;
+            ul{
+                font-size: 1.6vw;
+            }
+           }
+        .informacion-z {
+            grid-column: span 3;
+            border-bottom-style: solid;
+            margin-inline: 2rem;
+            ul{
+                font-size: 1.6vw;
+            }
+        }
+        .img-1 {
+            display: none;
+          }
+        .img-2, .img-3, .img-4{
+         width: 50%;
+         justify-self: center;
+         margin: 4rem;
+        }
+        .img-z {
+            justify-self: center;
+            margin-right: 2rem;
+            display: block;
+            grid-column: span 1;
+            align-content: center;
+            max-width: 50%;
+          }
+        .img-y {
+            justify-self: center;
+            margin-right: 2rem;
+            display: block;
+            grid-column: span 1;
+            align-content: center;
+          }
+        .div {
+            margin-block: 5px;
+          }
+        h1{
+            grid-column: span 2;
+            text-align: center;
+            font-size: 3vw;
+        }
+        h2{
+            grid-column: span 2;
+            font-size: 2vw;
+            color: $color-secundario;
+            text-align: center;
+        }
+        h3{
+            font-size: 2vw;
+        }
+        p{
+            font-size: 1.6vw;
+        }
+        .pb{
+            margin-bottom: 0;
+        }
+    }
+}
